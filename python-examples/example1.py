@@ -51,7 +51,7 @@ for idx, sim_id in enumerate(sim_ids):
                 statement_data = content.json()
 
                 # collect line item names once, they are the same for all companies with the standardised data
-                if len(d['Line Item']) == 0:
+                if len(d['Line Item']) == 0 and 'values' in statement_data:
                     d['Line Item'] = [x['standardisedName'] for x in statement_data['values']]
 
                 if 'values' in statement_data:
@@ -60,6 +60,13 @@ for idx, sim_id in enumerate(sim_ids):
                 else:
                     # no data found for time period
                     d[period_identifier] = [None for _ in d['Line Item']]
+
+        # fix the periods where no values were available
+        len_target = len(d['Line Item'])
+        if len_target > 0:
+            for k, v in d.items():
+                if len(v) != len_target:
+                    d[k] = [None for _ in d['Line Item']]
 
     # convert to pandas dataframe
     df = pd.DataFrame(data=d)
