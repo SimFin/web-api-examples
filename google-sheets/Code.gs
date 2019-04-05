@@ -81,7 +81,7 @@ function callApi() {
 }
 
 
-function onOpen() {
+function ADD_SIMFIN() {
   var ui = SpreadsheetApp.getUi();
   ui.createMenu('SimFin API')
       .addItem('Load data','callApi')
