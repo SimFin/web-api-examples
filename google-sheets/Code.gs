@@ -51,7 +51,7 @@ function callApi() {
     for(var s = 0,sx=statements.length;s<sx;s++){
 
       // get statement data
-      var response = UrlFetchApp.fetch("https://simfin.com/api/v1/companies/id/"+simId+"/statements/standardised?api-key="+apiKey+"&stype="+statements[s]+"&ptype="+period+"&fyear="+year);
+      var response = UrlFetchApp.fetch("https://simfin.com/api/v1/companies/id/"+simId+"/statements/standardised?api-key="+apiKey+"&stype="+statements[s]+"&ptype="+period+"&fyear="+year, {muteHttpExceptions:true});
       response = JSON.parse(response);
       if(response.hasOwnProperty("values") && response['values'].length > 0){
         if(!wroteLineItems[s]){
