@@ -1,3 +1,5 @@
+library(httr)
+library(jsonlite)
 ticker <- "AAPL"
 apiKey <- "fgOZWUlhmZvcwxOJ2PYqaKaNA3zNrVJ2"
 url <- paste("https://simfin.com/api/v1/info/find-id/ticker/",ticker,"?api-key=",apiKey,sep="")
