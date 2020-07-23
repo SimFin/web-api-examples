@@ -1,7 +1,9 @@
-# SimFin API Tutorial files
+# SimFin Web-API Tutorial files
+
+These are some examples how the SimFin web-API can be used to retrieve data. For our official Python API that works with the bulk data files, please visit this repository: https://github.com/SimFin/simfin
 
 ## Python
-Full beginners tutorial can be found here: https://medium.com/@SimFin_official/simfin-api-tutorial-6626c6c1dbeb
+Full beginners tutorial for the web-API can be found here: https://medium.com/@SimFin_official/simfin-api-tutorial-6626c6c1dbeb
 
 ## Google Sheets
 In order to get the data into a Google Sheet spreadsheet, copy the structure of this file (the blue area is the input and can be changed at your wish): 
