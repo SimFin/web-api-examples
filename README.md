@@ -2,7 +2,9 @@
 
 Version 2 of our web API was just made public.
 
-You can access the documentation here: https://simfin.com/api/v2/documentation/
+Get an API key [here](https://simfin.com/data/api).
+
+You can access the documentation [here](https://simfin.com/api/v2/documentation/).
 
 Examples in this repository:
 - [Basic example for Python](python/basic-example.py)
