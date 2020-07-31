@@ -2,8 +2,6 @@
 
 These are some examples how the SimFin web-API can be used to retrieve data. For our official Python API that works with the bulk data files, please visit this repository: https://github.com/SimFin/simfin
 
-The v1 folder contains the examples for the web-API v1.
-
 ## Python
 Full beginners tutorial for the web-API can be found here: https://medium.com/@SimFin_official/simfin-api-tutorial-6626c6c1dbeb
 
